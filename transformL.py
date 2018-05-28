@@ -3,7 +3,7 @@
 L為一個充滿整數的List；f為一個未知函數，輸入為整數，輸出為整數，
 g為一個未知函數，輸入為整數，輸出為布林值
 目的：檢查每一個L裡的整數index，若g(f(index))為真，留下此整數，
-其他整數皆從L刪除，最後回傳L裡的最大值。
+其他整數皆從L刪除，最後回傳L裡的最大值，若L空的，回傳-1。
 """
 
 def applyF_filterG(L, f, g):
@@ -18,7 +18,7 @@ def applyF_filterG(L, f, g):
         return -1
     else:
         return sorted(L)[len(L)-1]
-    
+#以下為測試    
 def f(i):
     return i
 def g(i):
