@@ -1,15 +1,9 @@
 # Hangman game
-#
-
-# -----------------------------------
-# Helper code
-# You don't need to understand this helper code,
-# but you will have to know how to use the functions
-# (so be sure to read the docstrings!)
-
+# 電腦從word.txt這個字庫中隨機抽選一個字，玩家一次猜一個字母，有八次機會
 import random
 
 WORDLIST_FILENAME = "words.txt"
+#重要！請把words.txt放置與此程式同一路徑下
 
 def loadWords():
     """
